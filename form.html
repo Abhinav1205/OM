@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup for ExplorXperts</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sign Up for ExploreXperts </h1>
+        <form id="signupForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6"><br><br>
+
+            <label for="travelType">Travel Type:</label>
+            <select id="travelType" name="travelType" required>
+                <option value="">Select...</option>
+                <option value="adventures tours">Adventure</option>
+                <option value="City tours">City</option>
+                <option value="customize tours">Customized</option>
+                <option value="Luxury tours">Luxury</option>
+                <option value="Romantic tours">Romantic</option>
+            </select><br><br>
+
+            <input type="submit" value="Sign Up">
+        </form>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
